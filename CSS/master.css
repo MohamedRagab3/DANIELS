@@ -1,0 +1,1335 @@
+/* Let's Prepare */
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url(../Font_Famliy/static/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(../Font_Famliy/static/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../Font_Famliy/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../Font_Famliy/Poppins/Poppins-Bold.ttf);
+}
+
+html {
+  font-size: 20px;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Color: #eee;
+}
+
+/* Let's Start */
+
+.Home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/Background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.Layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.Nav {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.Logo {
+  width: 50%;
+  color: white;
+  font-size: 0.9rem;
+  font-family: "Montserrat-ExtraBold";
+}
+
+.List {
+  width: 50%;
+  text-align: center;
+}
+.List ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.List ul li a:hover {
+  color: orchid;
+}
+
+.List ul li {
+  display: inline-block;
+  margin: 0 25px;
+  font-family: "Poppins-Regular";
+  font-size: 0.7rem;
+}
+
+.UnderLine {
+  border-bottom: 2px solid white;
+  transition: all 0.2s ease;
+}
+.UnderLine:hover {
+  border-bottom: 2px solid orchid;
+}
+
+.Content {
+  text-align: center;
+}
+
+.Content h2 {
+  color: white;
+  font-family: "Montserrat-ExtraBold";
+  font-size: 2.5rem;
+  margin-top: 220px;
+}
+
+.Content p {
+  color: white;
+  font-family: "Montserrat-Light";
+  font-size: 3rem;
+  margin: 25px 0 20px;
+}
+
+.Icon_Home div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: black;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.Icon_Home div i {
+  color: white;
+  font-size: 0.7rem;
+  transition: color 0.2s ease;
+}
+
+.Icon_Home div i:hover {
+  color: orchid;
+}
+
+::selection {
+  color: orchid;
+}
+
+/* Let's Start About Section */
+.About {
+  width: 100%;
+  height: 95vb;
+  background-color: white;
+}
+
+.About .Container {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Picture {
+  width: 35%;
+  height: 80%;
+}
+.Info {
+  width: 55%;
+  height: 80%;
+}
+
+.About .Info h2 {
+  font-family: "Montserrat-ExtraBold";
+  font-size: 1.5rem;
+  color: #212529;
+}
+
+.About .Info p:first-of-type {
+  color: #999;
+  font-size: 0.75rem;
+  font-family: "Poppins-Regular";
+  margin-top: 8px;
+}
+
+.About .Info p:nth-of-type(2) {
+  color: #748182;
+  font-size: 0.8rem;
+  font-family: "Poppins-Regular";
+  margin: 20px 0;
+}
+
+.About .Info p:nth-of-type(2) span {
+  color: #748182;
+  font-size: 0.78rem;
+  font-family: "Poppins-Bold";
+}
+
+.Progress {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.8;
+}
+
+.Root {
+  color: white;
+  font-size: 0.65rem;
+  font-family: "Montserrat-Light";
+  background-color: #e5e5e5;
+  width: 100%;
+  height: 25px;
+  border-radius: 6px;
+}
+
+.Root .common {
+  height: 25px;
+  padding: 0 10px;
+  background-color: #212529;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.First {
+  width: 95%;
+}
+
+.Second {
+  width: 80%;
+}
+
+.Third {
+  width: 90%;
+}
+
+.Button {
+  margin-top: 50px;
+}
+
+.Button a {
+  text-decoration: none;
+  padding: 14px 25px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-family: "Montserrat-Light";
+}
+
+.Button a:first-child {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  transition: all 0.5s ease;
+}
+
+.Button a:first-child:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.Button a:nth-child(2) {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  transition: all 0.5s ease;
+}
+
+.Button a:nth-child(2):hover {
+  color: white;
+  background-color: black;
+}
+
+.About .Photo {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  background-image: url(/image/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  order: 10;
+}
+
+/* Let's Start Services Section */
+
+.Services {
+  width: 100%;
+  height: 120vb;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+}
+
+.Services .Container {
+  width: 90%;
+  margin: 0 auto;
+  height: 90%;
+}
+
+.Section_Name {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #212529;
+  font-family: "Montserrat-ExtraBold";
+}
+
+.Skills {
+  width: 100%;
+  height: 94%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Services .Card {
+  width: 430px;
+  height: 320px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.FOR_Icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.FOR_Icon i {
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+
+.Skills .Card h3 {
+  font-family: "Montserrat-ExtraBold";
+  font-size: 0.9rem;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.Skills .Card p {
+  color: #748182;
+  font-family: "Poppins-Regular";
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.Card:hover .FOR_Icon {
+  background-color: black;
+}
+
+.Card:hover .FOR_Icon i {
+  color: white;
+}
+
+/* Let's Start Portfolio Section */
+
+.Portfolio {
+  width: 100%;
+  height: 140vb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Portfolio .Container {
+  width: 80%;
+  height: 90%;
+}
+
+.Portfolio .Container h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #212529;
+  font-family: "Montserrat-ExtraBold";
+  margin: 25px 0;
+}
+
+.Portfolio .Container .List {
+  width: 30%;
+  margin: 0 auto;
+
+  padding: 10px;
+}
+
+.Portfolio .Container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Portfolio .Container li {
+  text-decoration: none;
+  font-family: "Poppins-Regular";
+  font-size: 0.9rem;
+}
+
+.Portfolio .Container .Special {
+  border-bottom: 3px solid black;
+}
+
+.Image_Frame {
+  width: 100%;
+  height: 80%;
+  margin: 35px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+.Image_Protect {
+  width: calc(90% / 3);
+}
+
+.Image_Protect img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Let's Start Reviews Section */
+
+.Reviews {
+  width: 100%;
+  height: 310px;
+  background-color: white;
+}
+
+.Reviews .Container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Reviews .Container div {
+  text-align: center;
+}
+
+.Reviews .Container div i {
+  font-size: 1.5rem;
+}
+
+.Reviews .Container div h2 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-ExtraBold";
+  margin: 20px 0;
+}
+
+.Reviews .Container div p {
+  color: #748182;
+  font-size: 0.75rem;
+  font-family: "Poppins-Regular";
+}
+
+/* Let's Start Reviews Section */
+.Blog {
+  width: 100%;
+  height: 93vb;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Blog .Container {
+  width: 75%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Blog .Container h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.9rem;
+  color: #212529;
+  font-family: "Montserrat-ExtraBold";
+  margin: 15px 0;
+}
+
+.Blog .Container .Card_Father {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Blog .Container .Card {
+  width: 340px;
+  height: 400px;
+  margin-bottom: 20px;
+  transition: transform 1s ease;
+}
+
+.Blog .Container .Card:hover .Photo img {
+  transform: scale(1.01);
+}
+
+.Blog .Container .Card .Info {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  height: 43%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Blog .Container .Card .Photo {
+  overflow: hidden;
+}
+
+.Blog .Container .Card .Photo img {
+  width: 100%;
+}
+
+.Blog .Container .Card .Info h6 {
+  color: #888;
+  font-size: 0.7rem;
+  font-family: "Montserrat-Light";
+}
+
+.Blog .Container .Card .Info p {
+  color: #212529;
+  font-size: 1rem;
+  font-family: "Montserrat-ExtraBold";
+}
+
+.Blog .Container .Card .Info a {
+  color: #000;
+  font-size: 0.75rem;
+  font-family: "Poppins-Regular";
+}
+
+/* Let's Start Contact Section */
+
+.Contact {
+  width: 100%;
+  height: 100vb;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contact .Container {
+  width: 60%;
+  height: 90%;
+}
+
+.Contact .Container .Header h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.9rem;
+  color: #212529;
+  font-family: "Montserrat-ExtraBold";
+  margin: 25px 0;
+}
+
+.Contact .Container .Email_Container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Contact .Container .Email_Container .Email_Child {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Contact .Container .Email_Container .Email_Child .IICon {
+  font-size: 1.2rem;
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all 0.5s ease;
+}
+.Contact .Container .Email_Container .Email_Child:hover .IICon {
+  color: white;
+  background-color: black;
+}
+
+.Contact .Container .Email_Container .Email_Child h4 {
+  font-size: 0.8rem;
+  color: #212529;
+  font-family: "Montserrat-ExtraBold";
+}
+.Contact .Container .Email_Container .Email_Child p {
+  font-size: 0.75rem;
+  color: #748182;
+  font-family: "Poppins-Regular";
+}
+
+.Form {
+  width: 100%;
+  height: 300px;
+  margin-top: 80px;
+}
+
+.Form form input,
+textarea {
+  background-color: #eee;
+  color: #aaa;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.75rem;
+  border: none;
+}
+#Name,
+#Email {
+  height: 35px;
+  width: 40%;
+}
+#Email {
+  margin-left: 177px;
+}
+#TextArea {
+  width: 100%;
+  height: 150px;
+}
+.Form button {
+  width: 120px;
+  height: 30px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1.5px solid black;
+  transition: all 0.5s ease;
+}
+
+.Form button:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Let's Start The End Section */
+.The_End {
+  width: 100%;
+  height: 65px;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.65rem;
+  font-family: "Poppins-Regular";
+  padding: 20px;
+}
+
+/* Let's Prepare */
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url(../Font_Famliy/static/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(../Font_Famliy/static/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../Font_Famliy/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../Font_Famliy/Poppins/Poppins-Bold.ttf);
+}
+
+html {
+  font-size: 20px;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Color: #eee;
+}
+
+/* Let's Start */
+
+.Home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/Background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.Layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.Nav {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.Logo {
+  width: 50%;
+  color: white;
+  font-size: 0.9rem;
+  font-family: "Montserrat-ExtraBold";
+}
+
+.List {
+  width: 50%;
+  text-align: center;
+}
+.List ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.List ul li a:hover {
+  color: orchid;
+}
+
+.List ul li {
+  display: inline-block;
+  margin: 0 25px;
+  font-family: "Poppins-Regular";
+  font-size: 0.7rem;
+}
+
+.UnderLine {
+  border-bottom: 2px solid white;
+  transition: all 0.2s ease;
+}
+.UnderLine:hover {
+  border-bottom: 2px solid orchid;
+}
+
+.Content {
+  text-align: center;
+}
+
+.Content h2 {
+  color: white;
+  font-family: "Montserrat-ExtraBold";
+  font-size: 2.5rem;
+  margin-top: 220px;
+}
+
+.Content p {
+  color: white;
+  font-family: "Montserrat-Light";
+  font-size: 3rem;
+  margin: 25px 0 20px;
+}
+
+.Icon_Home div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: black;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.Icon_Home div i {
+  color: white;
+  font-size: 0.7rem;
+  transition: color 0.2s ease;
+}
+
+.Icon_Home div i:hover {
+  color: orchid;
+}
+
+::selection {
+  color: orchid;
+}
+
+/* Let's Start About Section */
+.About {
+  width: 100%;
+  height: 95vb;
+  background-color: white;
+}
+
+.About .Container {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Picture {
+  width: 35%;
+  height: 80%;
+}
+.Info {
+  width: 55%;
+  height: 80%;
+}
+
+.About .Info h2 {
+  font-family: "Montserrat-ExtraBold";
+  font-size: 1.5rem;
+  color: #212529;
+}
+
+.About .Info p:first-of-type {
+  color: #999;
+  font-size: 0.75rem;
+  font-family: "Poppins-Regular";
+  margin-top: 8px;
+}
+
+.About .Info p:nth-of-type(2) {
+  color: #748182;
+  font-size: 0.8rem;
+  font-family: "Poppins-Regular";
+  margin: 20px 0;
+}
+
+.About .Info p:nth-of-type(2) span {
+  color: #748182;
+  font-size: 0.78rem;
+  font-family: "Poppins-Bold";
+}
+
+.Progress {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.8;
+}
+
+.Root {
+  color: white;
+  font-size: 0.65rem;
+  font-family: "Montserrat-Light";
+  background-color: #e5e5e5;
+  width: 100%;
+  height: 25px;
+  border-radius: 6px;
+}
+
+.Root .common {
+  height: 25px;
+  padding: 0 10px;
+  background-color: #212529;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.First {
+  width: 95%;
+}
+
+.Second {
+  width: 80%;
+}
+
+.Third {
+  width: 90%;
+}
+
+.Button {
+  margin-top: 50px;
+}
+
+.Button a {
+  text-decoration: none;
+  padding: 14px 25px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-family: "Montserrat-Light";
+}
+
+.Button a:first-child {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  transition: all 0.5s ease;
+}
+
+.Button a:first-child:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.Button a:nth-child(2) {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  transition: all 0.5s ease;
+}
+
+.Button a:nth-child(2):hover {
+  color: white;
+  background-color: black;
+}
+
+.About .Photo {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  background-image: url(/image/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  order: 10;
+}
+
+/* Let's Start Services Section */
+
+.Services {
+  width: 100%;
+  height: 120vb;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+}
+
+.Services .Container {
+  width: 90%;
+  margin: 0 auto;
+  height: 90%;
+}
+
+.Section_Name {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #212529;
+  font-family: "Montserrat-ExtraBold";
+}
+
+.Skills {
+  width: 100%;
+  height: 94%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Services .Card {
+  width: 430px;
+  height: 320px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.FOR_Icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.FOR_Icon i {
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+
+.Skills .Card h3 {
+  font-family: "Montserrat-ExtraBold";
+  font-size: 0.9rem;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.Skills .Card p {
+  color: #748182;
+  font-family: "Poppins-Regular";
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.Card:hover .FOR_Icon {
+  background-color: black;
+}
+
+.Card:hover .FOR_Icon i {
+  color: white;
+}
+
+/* Let's Start Portfolio Section */
+
+.Portfolio {
+  width: 100%;
+  height: 140vb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Portfolio .Container {
+  width: 80%;
+  height: 90%;
+}
+
+.Portfolio .Container h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #212529;
+  font-family: "Montserrat-ExtraBold";
+  margin: 25px 0;
+}
+
+.Portfolio .Container .List {
+  width: 30%;
+  margin: 0 auto;
+
+  padding: 10px;
+}
+
+.Portfolio .Container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Portfolio .Container li {
+  text-decoration: none;
+  font-family: "Poppins-Regular";
+  font-size: 0.9rem;
+}
+
+.Portfolio .Container .Special {
+  border-bottom: 3px solid black;
+}
+
+.Image_Frame {
+  width: 100%;
+  height: 80%;
+  margin: 35px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+.Image_Protect {
+  width: calc(90% / 3);
+}
+
+.Image_Protect img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Let's Start Reviews Section */
+
+.Reviews {
+  width: 100%;
+  height: 310px;
+  background-color: white;
+}
+
+.Reviews .Container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Reviews .Container div {
+  text-align: center;
+}
+
+.Reviews .Container div i {
+  font-size: 1.5rem;
+}
+
+.Reviews .Container div h2 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-ExtraBold";
+  margin: 20px 0;
+}
+
+.Reviews .Container div p {
+  color: #748182;
+  font-size: 0.75rem;
+  font-family: "Poppins-Regular";
+}
+
+/* Let's Start Reviews Section */
+.Blog {
+  width: 100%;
+  height: 93vb;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Blog .Container {
+  width: 75%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Blog .Container h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.9rem;
+  color: #212529;
+  font-family: "Montserrat-ExtraBold";
+  margin: 15px 0;
+}
+
+.Blog .Container .Card_Father {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Blog .Container .Card {
+  width: 340px;
+  height: 400px;
+  margin-bottom: 20px;
+  transition: transform 1s ease;
+}
+
+.Blog .Container .Card:hover .Photo img {
+  transform: scale(1.01);
+}
+
+.Blog .Container .Card .Info {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  height: 43%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Blog .Container .Card .Photo {
+  overflow: hidden;
+}
+
+.Blog .Container .Card .Photo img {
+  width: 100%;
+}
+
+.Blog .Container .Card .Info h6 {
+  color: #888;
+  font-size: 0.7rem;
+  font-family: "Montserrat-Light";
+}
+
+.Blog .Container .Card .Info p {
+  color: #212529;
+  font-size: 1rem;
+  font-family: "Montserrat-ExtraBold";
+}
+
+.Blog .Container .Card .Info a {
+  color: #000;
+  font-size: 0.75rem;
+  font-family: "Poppins-Regular";
+}
+
+/* Let's Start Contact Section */
+
+.Contact {
+  width: 100%;
+  height: 100vb;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contact .Container {
+  width: 60%;
+  height: 90%;
+}
+
+.Contact .Container .Header h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.9rem;
+  color: #212529;
+  font-family: "Montserrat-ExtraBold";
+  margin: 25px 0;
+}
+
+.Contact .Container .Email_Container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Contact .Container .Email_Container .Email_Child {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Contact .Container .Email_Container .Email_Child .IICon {
+  font-size: 1.2rem;
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all 0.5s ease;
+}
+.Contact .Container .Email_Container .Email_Child:hover .IICon {
+  color: white;
+  background-color: black;
+}
+
+.Contact .Container .Email_Container .Email_Child h4 {
+  font-size: 0.8rem;
+  color: #212529;
+  font-family: "Montserrat-ExtraBold";
+}
+.Contact .Container .Email_Container .Email_Child p {
+  font-size: 0.75rem;
+  color: #748182;
+  font-family: "Poppins-Regular";
+}
+
+.Form {
+  width: 100%;
+  height: 300px;
+  margin-top: 80px;
+}
+
+.Form form input,
+textarea {
+  background-color: #eee;
+  color: #aaa;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.75rem;
+  border: none;
+}
+#Name,
+#Email {
+  height: 35px;
+  width: 40%;
+}
+#Email {
+  margin-left: 177px;
+}
+#TextArea {
+  width: 100%;
+  height: 150px;
+}
+.Form button {
+  width: 120px;
+  height: 30px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1.5px solid black;
+  transition: all 0.5s ease;
+}
+
+.Form button:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Let's Start The End Section */
+.The_End {
+  width: 100%;
+  height: 65px;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.65rem;
+  font-family: "Poppins-Regular";
+  padding: 20px;
+}
